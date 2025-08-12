@@ -63,4 +63,19 @@ body {
   button[type="submit"]:hover {
     background-color: #c62828;
   }
+
+  .error-text {
+    color: #c70039;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+  .invalid-input {
+    border-color: #c70039 !important;
+    background-color: #ffe9ee;
+  }
+  button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
   

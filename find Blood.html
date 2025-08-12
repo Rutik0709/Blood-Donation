@@ -10,7 +10,7 @@
   <div class="form-container">
     <h1>Find & Donate Blood</h1>
 
-    <form action="#" method="POST">
+    <form id="find-blood-form" action="#" method="POST" novalidate>
       <div class="section">
         <label>User Type:</label>
         <div class="radio-group">
@@ -72,12 +72,18 @@
       </div>
 
       <div class="form-actions">
-        <button type="submit">Submit</button>
-        <button type="reset" class="reset">Reset</button>
+        <button id="reset-btn" type="reset" class="reset">Reset</button>
+        <button id="submit-btn" type="submit" disabled>Search</button>
       </div>
     </form>
   </div>
   
+  <!-- Results container (initially hidden) -->
+  <div id="search-results" style="display:none; margin-top: 20px;">
+    <h2>Search Results</h2>
+    <ul id="results-list"></ul>
+  </div>
+
+  <script src="Web.js"></script>
 </body>
-<script src="Web.js" defer></script>
 </html>

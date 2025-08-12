@@ -21,6 +21,23 @@ body {
     margin-bottom: 25px;
     font-size: 26px; /* Reduced font size */
   }
+
+  .section-title {
+    color: #c70039;
+    margin: 24px 0 10px;
+    font-size: 20px;
+  }
+  .subsection {
+    margin: 18px 0 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  .info-note {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: -8px;
+    margin-bottom: 12px;
+  }
   
   form label {
     display: block;
@@ -69,9 +86,82 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 16px;
   }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
   
   .form-actions {
     display: flex;
     justify-content: center;
-    gap: 15
+    gap: 15px;
+  }
+
+  .amounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 16px;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    user-select: none;
+  }
+  .inline-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0 16px;
+  }
+  .checkbox-group {
+    display: grid;
+    gap: 8px;
+    margin: 8px 0 12px;
+  }
+  .checkbox-inline {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  /* Validation states */
+  .error-text {
+    color: #c70039;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+
+  .invalid-input {
+    border-color: #c70039 !important;
+    background-color: #ffe9ee;
+  }
+
+  button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    background: #1c1c1c;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: none;
   }

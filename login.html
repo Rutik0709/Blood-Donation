@@ -9,24 +9,17 @@
 <body>
   <div class="main">
     <h2>Login to Donate</h2>
-    <form id="loginForm">
+    <form id="loginForm" novalidate>
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" placeholder="Enter username" required />
 
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" placeholder="Enter password" required />
 
-      <button type="submit">Login</button>
+      <button type="submit" disabled>Login</button>
     </form>
   </div>
 
-  <script>
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-      alert(`Username: ${username}\nPassword: ${password}`);
-    });
-  </script>
+  <script src="Web.js"></script>
 </body>
 </html>
