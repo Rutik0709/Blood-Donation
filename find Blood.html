@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find & Donate Blood</title>
+  <link rel="stylesheet" href="finde Blood.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Find & Donate Blood</h1>
+
+    <form action="#" method="POST">
+      <div class="section">
+        <label>User Type:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="user_type" value="donor" required> Donor</label>
+          <label><input type="radio" name="user_type" value="seeker"> Seeker</label>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div>
+          <label for="first_name">First Name<span>*</span></label>
+          <input type="text" id="first_name" name="first_name" required />
+        </div>
+        <div>
+          <label for="last_name">Last Name<span>*</span></label>
+          <input type="text" id="last_name" name="last_name" required />
+        </div>
+        <div>
+          <label for="age">Age<span>*</span></label>
+          <input type="number" id="age" name="age" required />
+        </div>
+        <div>
+          <label for="gender">Gender<span>*</span></label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="blood_group">Blood Group<span>*</span></label>
+          <select id="blood_group" name="blood_group" required>
+            <option value="">Select</option>
+            <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+            <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+          </select>
+        </div>
+        <div>
+          <label for="phone">Phone Number<span>*</span></label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div>
+          <label for="email">Email<span>*</span></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="city">City<span>*</span></label>
+          <input type="text" id="city" name="city" required />
+        </div>
+        <div>
+          <label for="state">State<span>*</span></label>
+          <input type="text" id="state" name="state" required />
+        </div>
+        <div>
+          <label for="message">Message / Reason</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+  
+</body>
+<script src="Web.js" defer></script>
+</html>

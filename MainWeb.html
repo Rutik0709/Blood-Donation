@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blood Donation</title>
+  <link rel="stylesheet" href="MainWeb.css" />
+</head>
+<body>
+  <script src="Web.js" defer></script>
+  <div class="main">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Blood Bank Logo" class="logo" />
+        <h2 class="logo-text">Blood Bank</h2>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="find Blood">Find Blood</a></li>
+          <li><a href="Registration.html">Register Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+      <div class="text-box">
+        <h1>Save <span class="highlight">Life</span>, Donate <span class="highlight">Blood</span></h1>
+        <p class="par">
+          Donate blood and be a hero – your generosity can save lives.<br />
+          Join a proud tradition that has made a difference for centuries.<br />
+          Make an impact today with a simple, lifesaving act.
+        </p>
+      </div>
+
+      <!-- Login Form -->
+      <div class="form-box">
+        <h2>Login Here</h2>
+        <form id="loginForm">
+          <input type="email" name="email" placeholder="Enter Email" required />
+
+          <input type="password" name="password" placeholder="Enter Password"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z0-9])\S{8,}$"
+            title="Password must contain at least one number, one alphabet, one symbol, and be at least 8 characters long"
+            required />
+
+          <button type="submit" class="btnn">Login</button>
+
+          <p class="link">
+            Don't have an account?<br />
+            <a href="#">Sign up</a> here
+          </p>
+          <p class="liw">Or login with</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

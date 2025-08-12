@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ff4e50, #f9d423);
+    color: #1c1c1c;
+  }
+  
+  .form-container {
+    max-width: 650px; /* Reduced from 900px */
+    margin: 40px auto;
+    padding: 20px; /* Reduced padding */
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    color: #c70039;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px; /* Reduced font size */
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  form label span {
+    color: #e50914;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 15px;
+  }
+  
+  .radio-group label {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15
+  }
